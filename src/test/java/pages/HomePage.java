@@ -171,8 +171,9 @@ public class HomePage {
 		VerifyUtil.checkTwoTextsContainsOrNot(currentUrl, expectedUrlToBeConatins);
 	}
 
-	public void clickOnDifferentLayersOfMapSectionAndVerify(String expectedLayer, String expectedText) {
+	public void clickOnDifferentLayersOfMapSectionAndVerify(String expectedLayer, String expectedText) throws InterruptedException {
 		WaitUtils.waitForTheElementToBeClickable(driver, mapSection, "MAP Section");
+		WaitUtils.waitForTheFixedTime(2);
 		WindowUtil.scrollIntoView(driver, 0, 500);
 		mapSection.click();
 		WaitUtils.waifForPageToBeLoad(driver);

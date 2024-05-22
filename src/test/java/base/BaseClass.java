@@ -2,6 +2,7 @@ package base;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -14,7 +15,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.annotations.*;
 
-import utils.PropertiesConfigReader;
+import utils.ConfigReader;
 
 public class BaseClass {
 
@@ -24,7 +25,7 @@ public class BaseClass {
 	@BeforeMethod()
 	public void launchBrowser() throws IOException {
 
-		String BrowserName = PropertiesConfigReader.readPropData("BrowserName");
+		String BrowserName = ConfigReader.readPropData("BrowserName");
 		if (BrowserName.equalsIgnoreCase("Chrome")) {
 			// Set up ChromeOptions
 			ChromeOptions options = new ChromeOptions();

@@ -1,1 +1,0 @@
-{"uuid":"dbe026d9-b9b1-4c6b-89f9-c1b26c3e27b0","name":"Default suite","children":["92344348-c6b4-4f1f-a25a-0d41a8aed3e6"],"befores":[{"name":"initializeExtentReport","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1716408651878,"stop":1716408652085}],"afters":[],"start":1716408651842,"stop":1716408652312}

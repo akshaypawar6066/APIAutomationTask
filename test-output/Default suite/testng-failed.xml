@@ -6,12 +6,13 @@
       <class name="tests.HomePageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="VerifyCloudsLayersUnderMapSectionCanToggle"/>
-          <include name="VerifyTemperatureLayersUnderMapSectionCanToggle"/>
+          <include name="VerifyGlobalPrecipitationLayersUnderMapSectionCanToggle"/>
+          <include name="validateWeatherDetailsForSearchedCity"/>
+          <include name="verifyClickOnMapSectionFunctionality"/>
+          <include name="verifyWeatherInYourCityDetails"/>
           <include name="launchBrowser"/>
-          <include name="VerifyPressureLayersUnderMapSectionCanToggle"/>
-          <include name="VerifyWindspeedLayersUnderMapSectionCanToggle"/>
-          <include name="initializeExtentReport"/>
+          <include name="verifySearchBoxFunctionalitiesByEnteringInvalidCityName"/>
+          <include name="validateSearchFunctionalityForWeatherInformation"/>
         </methods>
       </class> <!-- tests.HomePageTest -->
     </classes>
